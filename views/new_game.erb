@@ -1,0 +1,12 @@
+<div style='border 3px dashed red'>
+	<% if @name == "" %>
+	Please enter your name
+	<br><a href="/new_game">Try Again</a>
+	<% else %>
+	<form action='/start'>
+		What's your name?
+		<input type='text' name='name'>
+		<input type='submit'value='submit'>
+	</form>	
+	<% end %>
+</div>
